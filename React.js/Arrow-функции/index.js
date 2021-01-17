@@ -1,11 +1,13 @@
-let fruits = ["Apple", "Pineapple", "Banana", "Tomato"];
-for (let i = 0; i < fruits.length; i+=2){
-    console.log(fruits[i]);
-}
-for (let i in fruits){
-    console.log(fruits[i])
-}
-let fruirsRevesed = fruits.reverse();
-for (let i in fruits.reverse){
-    console.log(fruirsRevesed[i])
-}
+let boyClub = ['Nikita', 'IGOR', 'MASHA', 'ARTEM', 'NASTYA']
+let amongUs = boyClub.map(function (item, i){
+    if (item == 'MASHA'){
+        console.log(item + " не из нашего клуба!")
+        item = 'VLADIMIR'
+    }
+    if (item == 'NASTYA'){
+        console.log(item + " не из нашего клуба!")
+        item = 'RUSLAN'
+    }
+    return item   
+})
+console.log(amongUs)
