@@ -1,13 +1,8 @@
-let boyClub = ['Nikita', 'IGOR', 'MASHA', 'ARTEM', 'NASTYA']
-let amongUs = boyClub.map(function (item, i){
-    if (item == 'MASHA'){
-        console.log(item + " не из нашего клуба!")
-        item = 'VLADIMIR'
-    }
-    if (item == 'NASTYA'){
-        console.log(item + " не из нашего клуба!")
-        item = 'RUSLAN'
-    }
-    return item   
+let numbers = [3, 2651, 123, -5, 78, 16 , 22, 1]
+numbers = numbers.filter((item, i)=>{
+    return item %2;
+});
+numbers = numbers.map((item, i)=>{
+    return item*10;
 })
-console.log(amongUs)
+console.log(numbers)
